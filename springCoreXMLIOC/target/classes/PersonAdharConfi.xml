@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="beans.PersonBean" name="person1">
+		<property name="id" value="1"/>
+		<property name="name" value="Swapnil" />
+		<property name="email" value="swapnil@gmail.com" />
+		<property name="contact" value="9921607707" />
+		<property name="adhar" ref="adhar1" />
+	</bean>
+	
+	<bean class="beans.AdharBean" name="adhar1">
+		<property name="id" value="1"/>
+		<property  name="aadhar_no" value="12345678901"/>
+		<property name="date_of_issue" value="10-02-2022"/>
+	</bean>
+</beans>
